@@ -36,7 +36,6 @@ if start_line != finish_line
 #CALCULATE DISTANCE FOR EACH LEG IF STOPS are on DIFFERENT LINES
   first_leg = start_list.index("US") -start_index
   second_leg = finish_list.index("US") -finish_index
-binding.pry
   total_distance = first_leg + second_leg.abs
   puts "Total stops: #{total_distance.abs}"
     if start_list.index("US") > start_index
