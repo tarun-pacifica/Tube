@@ -15,6 +15,10 @@ network[:G] = G
 
 #Starting Point Inputs
 puts "Welcome to New York's MTA. Choose your starting line from N,B,G..."
+puts 'N = ["TS", "34", "28", "23","US", "8"]'
+puts 'B = ["8","6","US","3"]'
+puts 'G = ["GC","33","28","23","US","AP"]'
+
 start_line = gets.chomp
 start_list = network[start_line.to_sym]
 
