@@ -19,21 +19,21 @@ puts 'N = ["TS", "34", "28", "23","US", "8"]'
 puts 'B = ["8","6","US","3"]'
 puts 'G = ["GC","33","28","23","US","AP"]'
 
-start_line = gets.chomp
+start_line = gets.chomp.upcase
 start_list = network[start_line.to_sym]
 
 puts "Now choose your station from #{start_list} ...."
-start_station = gets.chomp
+start_station = gets.chomp.upcase
 
 start_index = start_list.index(start_station)
 
 #Finish Point Inputs
 puts " All good journeys must come to an end so choose your finish line from N,B,G..."
-finish_line = gets.chomp
+finish_line = gets.chomp.upcase
 finish_list = network[finish_line.to_sym]
 
 puts "Now choose your final station from #{finish_list} ...."
-finish_station = gets.chomp
+finish_station = gets.chomp.upcase
 finish_index = finish_list.index(finish_station)
 
 if start_line != finish_line
