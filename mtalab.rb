@@ -56,5 +56,5 @@ if start_line != finish_line
 else
   total_distance = finish_index - start_index
   puts "Total stops: #{total_distance.abs}."
-  puts " Thanks for travelling with MTA"
 end
+  puts " Thanks for travelling with MTA"
